@@ -1,0 +1,12 @@
+Labelme-json format to YOLOv8-Segmet format:
+labelme2yolo --json_dir F:/Thesis_CE18030&60/resource/YOLO/YOLO_dataset --val_size 0.15 --test_size 0.15
+ref:  https://pypi.org/project/labelme2yolo/
+
+
+YOLOv8-Segment Model Train:
+yolo segment train data=F:/Thesis_CE18030&60/programs/YOLO/dataset.yaml model=F:/Thesis_CE18030&60/resource/YOLO/yolov8s-seg.pt epochs=200 imgsz=640 overlap_mask=False
+
+
+YOLOv8-Segment Model Test:
+yolo segment predict model=F:/Thesis_CE18030&60/programs/YOLO/runs/segment/train/weights/best.pt source='F:/Thesis_CE18030&60/resource/YOLO/YOLO_dataset/YOLODataset/images/test/IMG_20230513_192236_672.png'
+

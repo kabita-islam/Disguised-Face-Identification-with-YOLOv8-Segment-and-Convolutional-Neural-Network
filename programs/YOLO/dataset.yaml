@@ -1,0 +1,5 @@
+train: F:/Thesis_CE18030&60/resource/YOLO/YOLO_dataset/YOLODataset/images/train/
+val: F:/Thesis_CE18030&60/resource/YOLO/YOLO_dataset/YOLODataset/images/val/
+test: F:/Thesis_CE18030&60/resource/YOLO/YOLO_dataset/YOLODataset/images/test/
+nc: 4
+names: ['face', 'mask', 'sunglass', 'scarf']
